@@ -1,8 +1,8 @@
 import "./sidebar.scss";
 import DashboardIcon from "@mui/icons-material/Dashboard";
-import PersonOutlineIcon from "@mui/icons-material/PersonOutline";
+import GroupAddSharpIcon from '@mui/icons-material/GroupAddSharp';
+import SportsEsportsSharpIcon from '@mui/icons-material/SportsEsportsSharp';
 import ExitToAppIcon from "@mui/icons-material/ExitToApp";
-import SettingsSystemDaydreamOutlinedIcon from "@mui/icons-material/SettingsSystemDaydreamOutlined";
 
 import { Link } from "react-router-dom";
 import { DarkModeContext } from "../../context/darkModeContext";
@@ -55,7 +55,7 @@ const Sidebar = () => {
 
           <Link to="/users" style={{ textDecoration: "none" }}>
             <li>
-              <PersonOutlineIcon className="icon" />
+              <GroupAddSharpIcon className="icon" />
               <span>Usuarios</span>
             </li>
           </Link>
@@ -63,7 +63,7 @@ const Sidebar = () => {
 
           <Link to="/users/test" style={{ textDecoration: "none" }}>
               <li>              
-            <SettingsSystemDaydreamOutlinedIcon className="icon" />
+            <SportsEsportsSharpIcon className="icon" />
               <span>Jugar Ahora</span>
             </li>
             </Link>  

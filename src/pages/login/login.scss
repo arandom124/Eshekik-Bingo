@@ -3,6 +3,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    background-image: url(https://blogger.googleusercontent.com/img/a/AVvXsEhuZWLoH9DeLUDGcZfIntPhbo5QkIeykVeW6XCWE7V8QpwviV5UeO--T7-0t-gc-aJKRILIur4QOAzvVoHE2MvjAeOK69SDzpAk-xRgNYrWmcDSLJ7FjBO2WqmgKFQbCAThB1FOzzOjRq7qT6vMW10yKNyxNHsApOJdvl-uCgRxftO4qrVf9meM4ihl);
 
     form{
         display: flex;
@@ -13,6 +14,7 @@
             width: 200px;
             height: 30px;
             margin: 10px;
+            border-radius: 30px;
         }
 
         button{
@@ -23,6 +25,7 @@
             color: white;
             font-weight: bold;
             cursor: pointer;
+            border-radius: 30px;
         }
 
         span{
