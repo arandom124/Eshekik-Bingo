@@ -32,7 +32,7 @@ const Login = () => {
   return (
     
     //inicia logina_______________________________________________
-    <div className="login"><span>admin@admin.com</span>
+    <div className="login">
       <form onSubmit={handleLogin}>
         <input
           type="email"
