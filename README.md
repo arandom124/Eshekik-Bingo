@@ -1,4 +1,4 @@
-# conamos el repositorio
+# clonamos el repositorio
 git clone -b react-admin https://github.com/safak/youtube2022.git .
 
 # luego instalamos el yarn
