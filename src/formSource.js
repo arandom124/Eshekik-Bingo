@@ -2,9 +2,9 @@
 export const userInputs = [
   {
     id: "username",
-    label: "Nombre de usuario",
+    label: "Responsables",
     type: "text",
-    placeholder: "@arandom",
+    placeholder: "Mi Empresa",
   },
   {
     id: "displayName",
@@ -13,11 +13,12 @@ export const userInputs = [
     placeholder: "Domingo A",
   },
   {
-    id: "email",
-    label: "Correo electrónico",
-    type: "mail",
-    placeholder: "arandom48@gmail.com",
+    id: "country",
+    label: "Estado",
+    type: "text",
+    placeholder: "Debe y/o Pagado",
   },
+  
   {
     id: "phone",
     label: "# Serie",
@@ -25,20 +26,22 @@ export const userInputs = [
     placeholder: "5555",
   },
   {
+    id: "email",
+    label: "Correo electrónico",
+    type: "mail",
+    placeholder: "arandom48@gmail.com",
+  },
+  
+  {
+    id: "address",
+    label: "Vereda",
+    type: "text",
+    placeholder: "Popayan ",
+  },
+  {
     id: "password",
     label: "Contraseña",
     type: "password",
-  },
-  {
-    id: "address",
-    label: "DIRECCIÓN",
-    type: "text",
-    placeholder: "el cairo ",
-  },
-  {
-    id: "country",
-    label: "Estado",
-    type: "text",
-    placeholder: "debe y/o pagado",
+    placeholder: "Max 6 Caracteres",
   },
 ];

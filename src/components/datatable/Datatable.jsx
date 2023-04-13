@@ -51,12 +51,11 @@ const Datatable = () => {
   const actionColumn = [
     {
       field: "action",
-      headerName: "Action",
-      width: 200,
+      headerName: "Acción",
+      width: 300,
       renderCell: (params) => {
         return (
           <div className="cellAction">
-            <div>Cuidado al  </div>
             
             <div
               className="deleteButton"

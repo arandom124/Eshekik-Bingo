@@ -1,7 +1,7 @@
 // esta parte muestra el listado de usurios compartida con Datatable.js
 //tambien llama la bd
 export const userColumns = [
-  { field: "id", headerName: "ID", width: 70 },
+  { field: "id", headerName: "ID", width: 10 },
   
   {
     field: "displayName",
@@ -11,30 +11,24 @@ export const userColumns = [
 
   {
     field: "phone",
-    headerName: "# Serie",
+    headerName: "Serie Numero",
     width: 150,
   },
 
   {
     field: "address",
     headerName: "Vereda",
-    width: 100,
+    width: 200,
   },
   {
     field: "country",
     headerName: "Estado",
-    width: 100,
+    width: 150,
   },
   {
-    field: "status",
-    headerName: "Status",
-    width: 160,
-    renderCell: (params) => {
-      return (
-        <div className={`cellWithStatus ${params.row.status}`}>
-          {params.row.status}
-        </div>
-      );
-    },
+    field: "username",
+    headerName: "Responsables",
+    width: 200,
   },
+  
 ];
