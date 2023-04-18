@@ -67,11 +67,18 @@ const Sidebar = () => {
               <span>Jugar Ahora</span>
             </li>
             </Link>  
-          <p className="title">USUARIO</p>          
+          <p className="title">OPCIÓN</p>          
           <li onClick={handleSignOut}>
             <ExitToAppIcon className="icon" />
             <span>Cerrar sesión</span>
           </li>
+          <p className="title">👇🏻 INFO DEL DESARROLLADOR 👇🏻</p>
+          <Link to="https://portafolio-arandom.vercel.app/" style={{ textDecoration: "none" }}>
+            <li>
+              <GroupAddSharpIcon className="icon" />
+              <span>Acerca de</span>
+            </li>
+          </Link>
         </ul>
       </div>
       {/*<div className="bottom">
