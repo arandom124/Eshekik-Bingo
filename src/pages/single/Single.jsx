@@ -3,26 +3,48 @@ import Navbar from "../../components/navbar/Navbar";
 import React, { useState } from "react";
 import swal from "sweetalert";
 import Datatable from "../../components/datatable/Datatable"
+import { Link } from "react-router-dom";
 
 const Single = () => {
   
-  const mostrarAlerta=()=>{
-    swal({
-      title: "Ya tenemos un Ganador...!",
-      /*buttons: ["No","Si"],*/
-      content: {
-        element: "img",
-        attributes: {
-          src: "https://media.tenor.com/2VNjRPThPecAAAAC/bingo-lignon.gif",                  
+  const mostrarAlerta = () => {
+    // Cargar el audio
+    const audio = new Audio("https://cdn.pixabay.com/audio/2021/08/04/audio_7411377aba.mp3"); // Reemplaza con la URL de tu archivo de audio
+  
+    // Reproducir el audio
+    audio.play();
+  
+    // Mostrar la alerta después de un breve retraso (puedes ajustar el tiempo)
+    setTimeout(() => {
+      swal({
+        title: "¡Ya tenemos un Ganador...!",
+        content: {
+          element: "img",
+          attributes: {
+            src: "https://media.tenor.com/tUk2j6dlQWEAAAAC/bingo-star.gif",
+            style: "width: 400px; height: 400px;",
+          },
+        },
+        buttons: {
+          catch: {
+            text: "Sí",
+            value: true,
+          },
+          
+        },
+      }).then((value) => {
+        if (value) {
+          swal({
+            text: "Iniciamos otro nuevo Juego...",
+            icon: "success",
+            timer: 2000,
+          });
         }
-      }
-    }).then(respuesta => {
-      if (respuesta) {
-        swal({ text: "Iniciamos otro nuevo Juego...", icon: "success", timer: "2000", })
-        
-      }
-    })
-  }
+      });
+    }, 1000); // Ajusta el tiempo de retraso (en milisegundos) según tus necesidades
+  };
+  
+  
 
   //_________________________________________________________________________________________________________________
   const [imagenb, setImagenb] = useState("https://blogger.googleusercontent.com/img/a/AVvXsEhzmMvHsS4A0oHAqrO3sj2SkBmA4A-BWIw1AjdxBnTwu7Aj9Tr977bRsiu2tbQvAG0WQsuE-7pXtH8PS-w2WvGS67I3iT6Ewcqcyq71iAPWC3oDKB4IlHNdyPPJAO3a_hGcYbkrTUvXMPJZLnSR37QfgYkQDTNO-GbuTHvvibS69cJHe2HLFyTSH18f");
@@ -1135,7 +1157,11 @@ const Single = () => {
           </div>
         </div>
 
-<button onClick={()=>mostrarAlerta()} >B</button>
+        
+        <Link onClick={mostrarAlerta} className="link">
+          -- Canta Bingo
+        </Link>
+
         <div className="top">
           <div className="left" style={{ background: 'linear-gradient(rgb(209 204 204), rgb(52 54 56),rgb(72 67 67),rgb(98 93 93),rgb(69 69 70 / 84%))' }}>
              

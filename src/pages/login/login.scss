@@ -1,38 +1,42 @@
-.login{
+.login {
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     background-image: url(https://blogger.googleusercontent.com/img/a/AVvXsEhuZWLoH9DeLUDGcZfIntPhbo5QkIeykVeW6XCWE7V8QpwviV5UeO--T7-0t-gc-aJKRILIur4QOAzvVoHE2MvjAeOK69SDzpAk-xRgNYrWmcDSLJ7FjBO2WqmgKFQbCAThB1FOzzOjRq7qT6vMW10yKNyxNHsApOJdvl-uCgRxftO4qrVf9meM4ihl);
-
-    form{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        input{
-            width: 200px;
-            height: 30px;
-            margin: 10px;
-            border-radius: 30px;
-        }
-
-        button{
-            width: 200px;
-            height: 30px;
-            border: none;
-            background-color: purple;
-            color: white;
-            font-weight: bold;
-            cursor: pointer;
-            border-radius: 30px;
-        }
-
-        span{
-            font-size: 12px;
-            color: red;
-            margin-top: 10px;
-        }
-    }
-    
-}
+  }
+  
+  .login form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .login input {
+    width: 200px;
+    height: 30px;
+    margin: 10px;
+    border: none;
+    border-radius: 30px;
+    padding: 10px;
+  }
+  
+  .login button {
+    width: 200px;
+    height: 30px;
+    border: none;
+    background-color: purple;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 30px;
+  }
+  
+  .login span {
+    font-size: 12px;
+    color: red;
+    margin-top: 10px;
+  }
+  
+  /* Añade estilos adicionales según sea necesario para mejorar el aspecto minimalista y realista. */
+  
