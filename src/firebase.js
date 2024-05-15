@@ -5,11 +5,12 @@ import { getStorage } from "firebase/storage";
 
 const firebaseConfig = {
   apiKey: process.env.REACT_APP_FIREBASE_KEY,
-  authDomain: "react-d95a0.firebaseapp.com",
-  projectId: "react-d95a0",
-  storageBucket: "react-d95a0.appspot.com",
-  messagingSenderId: "918354961423",
-  appId: "1:918354961423:web:c36c517162b29472066f7a"
+  authDomain: "bingo23-c15e6.firebaseapp.com",
+  projectId: "bingo23-c15e6",
+  storageBucket: "bingo23-c15e6.appspot.com",
+  messagingSenderId: "265342010313",
+  appId: "1:265342010313:web:c923985277fd46f2bb1e18",
+  measurementId: "G-BBECFC1VDJ"
 };
 
 const app = initializeApp(firebaseConfig);
